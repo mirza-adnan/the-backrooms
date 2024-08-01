@@ -1,0 +1,22 @@
+{
+  "name": "the-backrooms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:watch": "npx tailwindcss -i ./static/global.css -o ./static/output.css --watch",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="./output.css"
+      rel="stylesheet"
+    />
+    <title>The Backrooms</title>
+  </head>
+  <body class="bg-black text-white">
+    <!-- <header>
+      <h1 class="text-center md:text-5xl text-2xl font-bold p-2">
+        The Backrooms
+      </h1>
+    </header> -->
+    <main class="flex flex-col items-center h-dvh">
+      <h1
+        id="channel-name"
+        class="text-2xl font-bold p-2"
+      >
+        IUT CSE
+      </h1>
+      <div
+        class="w-full max-w-[600px] px-2 flex flex-col mx-auto gap-y-5 overflow-y-scroll flex-grow"
+        id="messages"
+      >
+        <div class="message">
+          <p class="text-sm text-white/50 px-2 mb-1">Mirza Adnan</p>
+          <p
+            class="py-3 px-5 bg-white/10 w-fit rounded-full md:max-w-[70%] max-w-[90%]"
+          >
+            Hello how are you doing
+          </p>
+        </div>
+        <div class="message flex flex-col items-end">
+          <p class="text-sm text-white/50 px-2 mb-1">Mirza Adnan</p>
+          <p
+            class="py-3 px-5 bg-white/10 w-fit rounded-full md:max-w-[70%] max-w-[90%]"
+          >
+            Hello how are you
+          </p>
+        </div>
+      </div>
+      <form
+        id="text-form"
+        class="flex justify-start items-center py-2 w-full max-w-[600px] gap-x-3"
+      >
+        <input
+          class="text-white py-4 px-6 rounded-full w-[80%] bg-white/20 outline-blue-300 outline-1 outline-offset-2 flex-grow"
+          type="text"
+          id="text-input"
+          autocomplete="off"
+        />
+        <button
+          id="send-btn"
+          type="submit"
+          class="text-blue-500 font-semibold"
+        >
+          Send
+        </button>
+      </form>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
